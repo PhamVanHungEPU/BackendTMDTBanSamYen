@@ -14,7 +14,11 @@ const onlineUsers = new Set();
 const initSocket = (server) => {
   io = new Server(server, {
     cors: {
-      origin: "https://backendhungpham.pvhungit.id.vn",
+      origin: [
+        "http://localhost:3171",
+        "https://bansamyen.dantri24h.com",
+        "https://bansam.pvhungit.id.vn"
+      ],
       methods: ["GET", "POST"],
       credentials: true,
     },
