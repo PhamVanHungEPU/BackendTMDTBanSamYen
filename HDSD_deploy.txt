@@ -1,0 +1,38 @@
+tạo cho tôi model mongoodb
+nodejs express
+dự án của tôi về cho thuê phòng trọ
+1. Model PhongTro với các thuộc tính sau:
+- tên phòng trọ, giá theo tháng, địa chỉ chi tiết, Thành Phố cụ thể liên kết với Model ThanhPho, mô tả chi tiết. diện tích theo m², ngày đăng, status
+- đối tượng: liên kết với model DoiTuong
+- thông tin chủ trọ sẽ liên kết với Model NguoiDang
+- ảnh tổng quát (thành 1 mảng), video review 
+- thể loại: sẽ được liên kết với model TheLoai
+- tiện nghi: sẽ được liên kết với model TienNghi
+- môi trường xung quanh: sẽ được liên kết với model MoiTruongXungQuanh
+
+2. Model NguoiDang với các thuộc tính sau:
+- email, sodienthoai, hoTen, matKhau, avatar, vaitro mặc định người dùng, isActive, soDu, soLuotDangBai default 10
+
+3. Model DoiTuong với các thuộc tính sau:
+- tenDoiTuong, ảnh 
+4. Model TheLoai với các thuộc tính sau:
+- tenTheLoai, ảnh 
+5. Model TienNghi với các thuộc tính sau:
+- tenTienNghi, ảnh 
+6. Model MoiTruongXungQuanh với các thuộc tính sau:
+- tenMoiTruongXungQuanh, ảnh 
+7. Model ThanhPho với các thuộc tính sau:
+- tenThanhPho, ảnh 
+8. Model TheLoaiBV với các thuộc tính sau:
+- tenTheLoaiBV
+9. Model BaiViet với các thuộc tính sau:
+- title, anhBia, moTaNgan, noiDungChinh, status, tag[], ngayDang, 
+- theLoaiBaiViet được liên kết với model TheLoaiBV,
+- nguoiDang được liên kết với model NguoiDang,
+10. Model DanhGiaPhongTro với các thuộc tính sau:
+- phongTro liên kết với model PhongTro
+- nguoiDanhGia liên kết với model NguoiDang
+- sao, binhLuan, ngayDanhGia
+11. Model ThongBao để thông báo duyệt BaiViet và PhongTro
+12. Model GoiVip: tên gói, giá gói, mô tả gói
+
