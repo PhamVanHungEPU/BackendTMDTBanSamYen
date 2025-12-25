@@ -13,7 +13,7 @@ const client = new OpenAI({
 // ====================== 
 // 🧠 API sinh nội dung
 // ======================
-export const taoNoiDungAI = async (req, res) => {
+const taoNoiDungAI = async (req, res) => {
   try {
     const { prompt } = req.body;
 
@@ -55,4 +55,8 @@ export const taoNoiDungAI = async (req, res) => {
       error: err?.message,
     });
   }
+};
+
+module.exports = {
+    taoNoiDungAI
 };
