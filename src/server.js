@@ -51,7 +51,10 @@ connectDB();
 
 // Cài đặt CORS
 const allowedOrigins = [
-    'http://localhost:3171',     
+    'http://localhost:3171',
+    'https://bansamyen.dantri24h.com', 
+    'https://bansam.pvhungit.id.vn',
+    'https://giao-dien-tmdt-ban-sam-yen-five.vercel.app'
 ];
 
 app.use(cookieParser());
